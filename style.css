@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.protfolio-container{
+ min-height: 100vh;
+ width:100%;
+ display: flex;
+}
+@media only screen and (min-width:600px){
+    .protfolio-container{
+        flex-direction: row;
+    }
+}
+.navlist{
+    display:flex;
+    gap:3.5rem;
+    height: 15vh;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+.navlist li{
+    list-style: none;
+}
+.navlist li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #fff;
+    position: relative;
+}
+.left,.right{
+    height:100vh;
+    display: flex;
+    align-items: center;
+}
+.left{
+ background: #262525;
+ width:100%;
+ padding-left: 3rem;
+
+}
+.right{
+  background: linear-gradient(-45deg,#5db9ee,#262525 70%);
+  width:40%;
+}
+.icons .fa-brands{
+    color: #bbb;
+    font-size: 1.7rem;
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:3rem;
+}
+.content{
+    margin-left: 4rem;
+}
+.content .intro span{
+    color: #5db9ee;
+}
+.content .intro{
+    font-size:1.5rem;
+    color:#fff;
+}
+.content h1{
+    font-size:4rem;
+    color:#5db9ee;
+}
+.content .detail{
+    font-size: 1.1rem;
+    color:#fff;
+    max-width: 38rem;
+    margin: 1.1rem 0 3rem 0;
+    line-height: 1.8rem;
+}
+.btn button{
+    border: .1rem solid #5db9ee;
+    font-size: 1.1rem;
+    padding: .8rem 1.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+
+}
+button:nth-child(1){
+    background: #5db9ee; 
+    color:#262525;
+}
+button:nth-child(2){
+    background: transparent;
+    color: #5db9ee;
+    margin-left: 2rem;
+}
+button:nth-child(1):hover{
+    background:transparent;
+    color:#5db9ee;
+}
+button:nth-child(2):hover{
+    background: #5db9ee;
+    color: #262525;
+}
+.icons .fa-brands:hover{
+    cursor: pointer;
+    background: linear-gradient(#fff,#5db9ee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.design .circle{
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    top:50%;
+    left:70%;
+    transform: translate(-50%,-50%);
+}
+.circle:nth-child(1){
+    background: linear-gradient(90deg, transparent 50%,#262525 50%);
+    width:38rem;
+}
+.circle:nth-child(2){
+    background-image: url("image/IMG_6391.JPG");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width:30rem;
+   box-shadow: 0 0 3rem #fff,inset 0 0 3rem #fff;
+}
+.navlist li a::after{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    height: .1rem;
+    left:0;
+    bottom: -5px;
+    transform: scaleX(0);
+
+}
+.navlist li a:hover::after{
+transform:scaleX(1);
+}
+.work-container
+{
+    background-color: #262525;
+    padding: 2rem;
+}
+.sub
+{
+    color:#fff;
+    display:flex;
+    justify-content: center;
+    gap: 3.5em;
+}
+@media only screen and(max-width: 600px){
+
+    .sub{
+        flex-direction: column;
+        align-items: center;
+    }
+    .content{
+        margin-left: 0;
+        text-align: center;
+    }
+    .right{
+        order:-1;
+    }
+}
+.work-container h2{
+    text-align: center;
+    color: #5db9ee;
+   
+}
+.work-container li{
+    list-style: none;
+}
+.internship-container{
+    background-color: #262525;
+}
+.internship-container h2
+{
+    text-align: center;
+    color: #5db9ee;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+.inventrome
+{
+    color:#fff;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+.inventrome h3{
+    padding-bottom: 1.5rem;
+    color: #5db9ee;
+}
+.dsml{
+    color:#fff;
+    text-align:center;
+    padding-bottom: 3rem;
+}
+.dsml h3{
+    padding-bottom: 1.5rem;
+    color: #5db9ee;
+}
+.project-container{
+    background-color:#262525;
+}
+.project-container h2:nth-child(1){
+    text-align: center;
+    color: #5db9ee;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.project-container h2{
+    text-align: center;
+    color: #5db9ee;
+    padding-bottom: 1.5rem;
+}
+.project-container p{
+    color:#fff;
+    text-align: center;
+}
+.skill-container{
+    background-color: #262525;
+}
+.skill-container h2{
+    color:#5db9ee;
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+}
+.icon2 .fa-brands{
+    color: #bbb;
+    font-size: 1.7rem;
+}
+.icon2 .fa-regular{
+    color: #bbb;
+    font-size: 1.7rem;
+}
+.icon2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:3rem;
+   
+}
